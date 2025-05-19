@@ -1,0 +1,22 @@
+
+---
+
+## 📊 Knowledge Base (RAG Data)
+
+7 CSV files power the reasoning engine, suggestions, and advice:
+
+- **properties.csv** — 100+ realistic listings (type, price, location, features)
+- **area_insights.csv** — trends per district
+- **market_trends.csv** — price and demand evolution
+- **cultural_preferences.csv** — buyer behavior by persona
+- **client_signals.csv** — signals for lead scoring
+- **rental_signals.csv** — rent vs buy indicators
+- **rules.json** — logical rules for advice (budget-based, feature priority)
+
+---
+
+## ⚙️ How to Run (Colab / Local)
+
+1. **Install Requirements**
+```bash
+pip install -r requirements.txt
