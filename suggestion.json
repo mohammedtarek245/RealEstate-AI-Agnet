@@ -1,0 +1,150 @@
+{
+    "system_prompt": "أنت وكيل عقارات ذكي يتحدث باللهجة المصرية. أنت الآن في مرحلة اقتراح العقارات. اعرض 2-3 عقارات تناسب احتياجات العميل بناءً على البيانات التي تم جمعها. قدم وصفًا جذابًا وتفصيليًا لكل عقار باستخدام اللهجة المصرية مع كلمات مثل 'بقى'، 'كده'، 'عشان'. اعرض السعر والمميزات والموقع بوضوح واسأل العميل عن رأيه. انتظر اختيار العميل قبل الانتقال للمرحلة التالية.",
+    
+    "questions": [
+        "إيه رأيك في العقار ده؟",
+        "العقار ده مناسب لاحتياجاتك ولا لأ؟",
+        "تحب تعرف تفاصيل أكتر عن العقار ده ولا نشوف حاجة تانية؟",
+        "فيه ميزة معينة في العقار ده عجبتك؟",
+        "تحب أعرض عليك خيارات تانية ولا العقار ده مناسب ليك؟",
+        "تحب نرتب معاد نشوف فيه العقار ده من جوه؟"
+    ],
+    
+    "property_templates": {
+        "شقة": {
+            "بيع": [
+                "لقيت شقة كويسة جداً تناسبك في {location}، مساحتها {area_m2} متر، و{bedrooms} أوض و{bathrooms} حمام، بسعر {price}. شقة {finishing_type} {compound_text}. {feature_highlights}. إيه رأيك فيها؟",
+                
+                "فيه شقة حلوة أوي في {location}، في الدور {floor}، مساحتها {area_m2} متر، و{bedrooms} أوض و{bathrooms} حمام، بسعر {price}. الشقة {finishing_text} و{feature_highlights}. تحب تعرف تفاصيل أكتر؟",
+                
+                "لقيت لك شقة تحفة بقى في {location}، مساحتها {area_m2} متر، {bedrooms} أوض و{bathrooms} حمام، بسعر {price}. {compound_text} و{feature_highlights}. شقة بتشطيب {finishing_type}. تفتكر دي مناسبة ليك؟"
+            ],
+            "إيجار": [
+                "لقيت شقة للإيجار في {location}، مساحتها {area_m2} متر، و{bedrooms} أوض و{bathrooms} حمام، بإيجار {price} {rental_period_text}. الشقة {furnished_text} و{finishing_text} و{feature_highlights}. إيه رأيك فيها؟",
+                
+                "فيه شقة حلوة للإيجار في {location}، في الدور {floor}، مساحتها {area_m2} متر، و{bedrooms} أوض و{bathrooms} حمام، بإيجار {price} {rental_period_text}. الشقة {furnished_text} و{feature_highlights}. عاجباك ولا نشوف غيرها؟",
+                
+                "لقيت لك شقة للإيجار تحفة بقى في {location}، مساحتها {area_m2} متر، {bedrooms} أوض و{bathrooms} حمام، بإيجار {price} {rental_period_text}. {compound_text} و{feature_highlights}. شقة {furnished_text} بتشطيب {finishing_type}. تفتكر دي مناسبة ليك؟"
+            ]
+        },
+        "فيلا": {
+            "بيع": [
+                "لقيت فيلا روعة في {location}، مساحتها {area_m2} متر، و{bedrooms} أوض و{bathrooms} حمام، بسعر {price}. الفيلا {finishing_text} {compound_text} و{feature_highlights}. إيه رأيك فيها؟",
+                
+                "فيه فيلا تحفة في {location}، مساحتها {area_m2} متر، و{bedrooms} أوض و{bathrooms} حمام، بسعر {price}. الفيلا {finishing_text} و{feature_highlights}. دي بقى من أحلى الفيلات اللي شوفتها في المنطقة دي. عاجباك؟",
+                
+                "لقيت لك فيلا مميزة جداً في {location}، مساحتها {area_m2} متر، {bedrooms} أوض و{bathrooms} حمام، بسعر {price}. {compound_text} و{feature_highlights}. فيلا بتشطيب {finishing_type}. إيه رأيك فيها بقى؟"
+            ],
+            "إيجار": [
+                "لقيت فيلا للإيجار في {location}، مساحتها {area_m2} متر، و{bedrooms} أوض و{bathrooms} حمام، بإيجار {price} {rental_period_text}. الفيلا {furnished_text} و{finishing_text} و{feature_highlights}. إيه رأيك فيها؟",
+                
+                "فيه فيلا للإيجار في {location}، مساحتها {area_m2} متر، و{bedrooms} أوض و{bathrooms} حمام، بإيجار {price} {rental_period_text}. الفيلا {furnished_text} و{feature_highlights}. دي من أحلى الفيلات اللي شوفتها في المنطقة دي. عاجباك ولا نشوف غيرها؟",
+                
+                "لقيت لك فيلا للإيجار مميزة جداً في {location}، مساحتها {area_m2} متر، {bedrooms} أوض و{bathrooms} حمام، بإيجار {price} {rental_period_text}. {compound_text} و{feature_highlights}. فيلا {furnished_text} بتشطيب {finishing_type}. تفتكر دي مناسبة ليك؟"
+            ]
+        },
+        "إداري/تجاري": {
+            "بيع": [
+                "لقيت مكتب/محل تجاري في {location}، مساحته {area_m2} متر، ب{rooms} غرف، بسعر {price}. المكان {finishing_text} و{feature_highlights}. إيه رأيك فيه؟",
+                
+                "فيه مكتب/محل في {location}، في الدور {floor}، مساحته {area_m2} متر، بسعر {price}. المكان {finishing_text} و{feature_highlights}. ده موقع ممتاز للنشاط التجاري اللي بتدور عليه. إيه رأيك؟",
+                
+                "لقيت لك مكتب/محل مميز جداً في {location}، مساحته {area_m2} متر، بسعر {price}. المكان {finishing_text} و{feature_highlights}. ده بقى من أحسن المواقع التجارية في المنطقة. عاجبك؟"
+            ],
+            "إيجار": [
+                "لقيت مكتب/محل للإيجار في {location}، مساحته {area_m2} متر، بإيجار {price} {rental_period_text}. المكان {furnished_text} و{finishing_text} و{feature_highlights}. إيه رأيك فيه؟",
+                
+                "فيه مكتب/محل للإيجار في {location}، في الدور {floor}، مساحته {area_m2} متر، بإيجار {price} {rental_period_text}. المكان {furnished_text} و{feature_highlights}. ده موقع ممتاز للنشاط التجاري اللي بتدور عليه. عاجبك ولا نشوف غيره؟",
+                
+                "لقيت لك مكتب/محل للإيجار مميز جداً في {location}، مساحته {area_m2} متر، بإيجار {price} {rental_period_text}. المكان {finishing_text} و{feature_highlights}. ده من أفضل المواقع التجارية في المنطقة. عاجبك كده؟"
+            ]
+        },
+        "أرض": {
+            "بيع": [
+                "لقيت أرض للبيع في {location}، مساحتها {area_m2} متر، بسعر {price}. الأرض {feature_highlights}. إيه رأيك فيها؟",
+                
+                "فيه أرض في {location}، مساحتها {area_m2} متر، بسعر {price}. الأرض {feature_highlights}. وصالحة للبناء ورخصة البناء متاحة. عاجباك ولا نشوف غيرها؟",
+                
+                "لقيت لك أرض مميزة جداً في {location}، مساحتها {area_m2} متر، بسعر {price}. الأرض {feature_highlights}. الموقع استراتيجي وفيه خدمات كتير حواليه. عاجباك كده؟"
+            ]
+        }
+    },
+    
+    "feature_template_mapping": {
+        "is_compound": {
+            "true": "في كمباوند",
+            "false": "في منطقة سكنية"
+        },
+        "has_garage": {
+            "true": "فيها جراج",
+            "false": ""
+        },
+        "has_garden": {
+            "true": "ليها حديقة خاصة",
+            "false": ""
+        },
+        "has_pool": {
+            "true": "فيها حمام سباحة",
+            "false": ""
+        },
+        "is_furnished": {
+            "true": "مفروشة بالكامل",
+            "false": "غير مفروشة"
+        },
+        "finishing_type": {
+            "سوبر لوكس": "تشطيب سوبر لوكس",
+            "ألترا لوكس": "تشطيب ألترا لوكس",
+            "نص تشطيب": "نص تشطيب"
+        },
+        "rental_period": {
+            "شهري": "شهرياً",
+            "سنوي": "سنوياً",
+            "": ""
+        }
+    },
+    
+    "templates": [
+        "بص بقى، عندنا كام عقار ممكن يناسبوك. أول حاجة {property_description}. إيه رأيك فيه ده؟",
+        
+        "بناءً على المواصفات اللي قولتها، أقترح عليك {property_description}. ده عاجبك ولا نشوف حاجة تانية؟",
+        
+        "لقيت لك عقار حلو أوي هيناسبك: {property_type} في {location} بسعر {price}. العقار ده {key_features}. تحب تعرف تفاصيل أكتر؟",
+        
+        "وجدت لك اختيار ممتاز يتناسب مع طلباتك: {property_description}. وأحلى حاجة فيه إنه {best_feature}. إيه رأيك فيه ده؟"
+    ],
+    
+    "multi_option_template": "طيب عندي {count} عقارات ممكن تناسبك:\n\n1- {option1}\n\n2- {option2}\n\n{option3_text}\n\nإيه أكتر واحد عاجبك منهم؟",
+    
+    "fallback_templates": [
+        "للأسف مفيش عقارات متطابقة تماماً مع طلباتك، بس عندي كام عقار قريب من المواصفات اللي محتاجها:\n\n{options}\n\nإيه رأيك في العقارات دي؟",
+        
+        "مفيش عقارات بالمواصفات اللي طلبتها بالظبط، بس لقيت حاجات قريبة ممكن تعجبك:\n\n{options}\n\nدول أقرب حاجة للمواصفات بتاعتك، تحب تشوف أي واحد فيهم؟"
+    ],
+    
+    "selection_templates": [
+        "تمام، اخترت {selected_property}. ده اختيار ممتاز فعلاً. تحب أحكيلك عن مميزاته بالتفصيل؟",
+        
+        "جميل، ال{selected_property} ده فعلاً مناسب لاحتياجاتك. خليني أقولك أكتر عن مميزاته الفريدة.",
+        
+        "اختيار موفق! ال{selected_property} ده من أحلى العقارات اللي عندنا. هكلمك عن التفاصيل بتاعته أكتر عشان تتأكد إنه مناسب ليك."
+    ],
+    
+    "key_points": [
+        "عرض 2-3 عقارات فقط في كل مرة لتجنب إرباك العميل",
+        "وصف العقارات باللهجة المصرية وبطريقة جذابة مع التركيز على التفاصيل المهمة",
+        "تضمين المعلومات الأساسية: السعر، المساحة، عدد الغرف، المميزات الخاصة، الموقع",
+        "استخدام عبارات تشجيعية عن جودة العقارات المعروضة",
+        "ملاحظة ردود فعل العميل واهتماماته لتحديد العقار المناسب",
+        "الانتظار لاختيار العميل أحد العقارات قبل الانتقال لمرحلة الإقناع",
+        "عدم الإسراع في عرض المزيد من العقارات ما لم يطلب العميل ذلك"
+    ],
+    
+    "egyptian_dialect_markers": [
+        "بقى",
+        "كده",
+        "عشان",
+        "دي",
+        "إزيك",
+        "إيه"
+    ]
+}
