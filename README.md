@@ -86,15 +86,13 @@ python app.py         # Launch Gradio / Streamlit UI
 
 ..
 
-| Feature                 | Done? |
+| Feature                 
 | ----------------------- | ----- |
 | 7 conversation phases ✅ |       |
 | Real estate data     ✅  |       |
 | Reasoning engine     ✅  |       |
 | Gradio UI            ✅  |       |
 | Gemini/LLM support   ✅  |       |
-| Vector RAG optional  🔄 |       |
-| Deployment to HF     🔄 |       |
 
 
 🤖 Future Options
